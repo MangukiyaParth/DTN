@@ -1,0 +1,202 @@
+@font-face {
+    font-family: Copperplate;
+    src: url("../fonts/OPTICopperplate.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Copperplate;
+    font-weight: bold;
+    src: url("../fonts/OPTICopperplate-Heavy.otf") format("opentype");
+}
+* {
+    font-family: Copperplate;
+}
+.container {
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .page-links{
+    color: #015296;
+}
+@media only screen and (max-width: 768px) {
+    .header{
+        display: block !important;
+        text-align: center !important;
+    }
+}
+.sub-header {
+    padding: 5%;
+    background-color: #015296;
+    color: #FFFFFF;
+    text-align: center;
+}
+.extra-header {
+    padding: 2%;
+    color: #015296;
+    text-align: center;
+    border: 3px solid #015296;
+}
+.main-heading {
+    font-size: 3rem;
+}
+.sub-heading {
+    font-size: 1.3rem;
+}
+@media only screen and (max-width: 768px) {
+    .main-heading {
+        font-size: 2rem !important;
+    }
+    .sub-heading {
+        font-size: 1rem !important;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .main-heading {
+        font-size: 1.7rem !important;
+    }
+    .sub-heading {
+        font-size: 0.7rem !important;
+    }
+}
+.why-dtn {
+    display: flex;
+}
+.why-dtn .desc{
+    width: 50%;
+    padding: 5%;
+}
+.why-dtn .desc .title{
+    font-size: 2rem;
+    color: #015296;
+}
+.why-dtn .desc p{
+    font-family: system-ui;
+    text-align: justify;
+}
+.why-dtn .img{
+    width: 50%;
+    padding: 5% 2%;
+}
+.why-dtn .img img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
+    .why-dtn {
+        display: block !important;
+    }
+    .why-dtn .desc{
+        width: 100% !important;
+        padding: 5% 2% !important;
+    }
+    .why-dtn .img{
+        width: 100% !important;
+        padding: 5% 2% !important;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .why-dtn {
+        height: 80% !important;
+    }
+}
+
+.product {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.product div{
+    font-family: system-ui !important;
+    color: #015296;
+}
+.product .item{
+    width: 33%;
+}
+.product img{
+    width: 100%;
+    height: 80%;
+}
+.product .item .item-details{
+    padding: 5%;
+}
+.product .item .item-details .item-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .product {
+        display: block !important;
+    }
+    .product .item{
+        width: 100% !important;
+    }
+    .product img{
+        height: auto !important;
+    }
+    .product .item .item-details{
+        padding: 3% 3% 5% 3% !important;
+    }
+}
+.branches {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.branches div{
+    color: #015296;
+}
+.branches .branch{
+    width: 33%;
+    padding: 5%;
+}
+.branches img{
+    width: 100%;
+    border-radius: 50%;
+}
+.branches .branch .branch-details{
+    padding: 5%;
+    text-align: center;
+}
+.branches .branch .branch-details .branch-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .branches {
+        display: block !important;
+    }
+    .branches .branch{
+        width: 100% !important;
+        padding: 5% 15% !important;
+    }
+    .branches .branch .branch-details{
+        padding: 3% 3% 5% 3% !important;
+    }
+}
+
+.saprator {
+    background-color: #015296;
+    padding: 5px;
+}
+
+.footer{
+    text-align: center;
+    color: #015296;
+    padding: 3%;
+}
+
+.footer .sub-heading{
+    font-family: system-ui !important;
+}
+.footer .sub-heading a{
+    color: #015296 !important;
+}
